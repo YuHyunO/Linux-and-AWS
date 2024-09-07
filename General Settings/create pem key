@@ -21,7 +21,6 @@ $ chmod 600 .ssh/authorized_keys
 
 8. Generate key with rsa type
 $ ssh-keygen -t rsa
-$   (when the user has no permission to access ssh)
 
 9. Copy the content of the '.ssh/id_rsa.pub' file
 
