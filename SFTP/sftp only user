@@ -2,7 +2,7 @@
 $ apt install acl
 
 1. Create the group that can only use SFTP
-$ groupadd <group name>
+$ groupadd <sftp-only group name>
 
 2. Create a directory for the 'sftp-only' group
 [ex] /data/sftp/files/
@@ -12,10 +12,11 @@ $ chown root:root <sftp-only directory>
 $ chmod 755 <sftp-only directory>
 $ setfacl -d -m g:<sftp-only group name>:<rwx> <sftp-only directory>
 
-4. Configure match setting in /etc/ssh/sshd_config
+4. Configure the match setting in "/etc/ssh/sshd_config" as below.
+
 #Subsystem	sftp	/usr/libexec/openssh/sftp-server
 Subsystem sftp internal-sftp
-Match Group <group name>
+Match Group <sftp-only group name>
     ChrootDirectory <sftp-only directory>
     ForceCommand internal-sftp
     X11Forwarding no
