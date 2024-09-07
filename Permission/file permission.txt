@@ -1,0 +1,20 @@
+|-----------------|-----------------|-----------------|
+|      User       |      Group      |      Other      |
+|-----------------|-----------------|-----------------|
+|  r  |  w  |  x  |  r  |  w  |  x  |  r  |  w  |  x  |
+|  4  |  2  |  1  |  4  |  2  |  1  |  4  |  2  |  1  |
+|-----------------|-----------------|-----------------|
+
+1. Change permission of file
+$ chmod <permission number> <file or directory>
+[ex] $ chmod 777 a_directory
+
+2. Change owner of file
+$ chown <options> <owner> <file or directory>
+$ chown <options> <owner>:<group> <file or directory>
+>option -R means --recursive
+
+3. Change group of file
+$ chgrp <options> <group> file
+>option -R means --recursive
+
