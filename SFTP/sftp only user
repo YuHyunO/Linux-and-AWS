@@ -1,4 +1,4 @@
-# First install acl
+# First, install acl
 $ apt install acl
 
 1. Create the group that can only use SFTP
@@ -24,6 +24,4 @@ Match Group <group name>
 
 5. Add user
 $ sudo adduser <user name> --ingroup <> --shell /usr/sbin/nologin
-$ sudo passwd <user name>                   #<-- change password
-
 
