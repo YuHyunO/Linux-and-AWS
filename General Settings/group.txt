@@ -1,0 +1,23 @@
+1. Create a group
+$ groupadd <group name>
+$ groupadd -g <GID> <group name>
+
+2. Delete group
+$ groupdel <group name>
+
+3. List groups
+$ cat /etc/group
+
+4. Show current user's groups
+$ groups
+
+5. Show specific user's groups
+$ groups <user>
+
+# gpasswd
+1)Add user to a group:
+$ gpasswd -a <user> <group>
+
+2)Delete user from a group:
+$ gpasswd -d <user> <group>
+
