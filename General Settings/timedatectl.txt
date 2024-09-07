@@ -1,0 +1,18 @@
+timedatectl
+$ timedatectl
+               Local time: Sat 2024-09-07 11:36:46 KST
+           Universal time: Sat 2024-09-07 02:36:46 UTC
+                 RTC time: Sat 2024-09-07 02:36:46
+                Time zone: Asia/Seoul (KST, +0900)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+
+# timedatectl set-time "2021-08-10 19:41:00"
+# timedatectl set-time "19:41:00"
+# timedatectl list-timezones
+# timedatectl set-timezone Asia/Seoul
+
+# timedatectl set-ntp yes
+# timedatectl set-ntp no
