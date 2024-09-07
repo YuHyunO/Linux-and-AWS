@@ -18,5 +18,7 @@ userlist_deny=NO
 
 3) Create <userlist_file> and add user
 
+4) Restart vsftpd
+$ sudo systemctl restart vsftpd
 
-4) Create <local_root> and modify the permission
+5) Create <local_root> and modify the permission
