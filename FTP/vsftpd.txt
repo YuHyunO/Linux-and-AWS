@@ -1,0 +1,22 @@
+1) Download vsftpd
+$ sudo apt install vsftpd
+
+2) Configure vsftpd.conf
+listen=NO
+listen_ipv6=YES
+anonymous_enable=NO
+local_enable=YES
+chroot_local_user=YES
+allow_writeable_chroot=YES
+local_root=/data/ftp/files
+write_enable=YES
+local_umask=022
+dirmessage_enable=YES
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+
+3) Create <userlist_file> and add user
+
+
+4) Create <local_root> and modify the permission
