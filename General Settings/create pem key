@@ -1,0 +1,32 @@
+1. Add new user
+$ adduser <newuser>
+
+2. Login to new user
+$ su <newuser>
+
+3. Move to new user's home
+$ cd ~
+
+4. Make directory with name '.ssh' into the new user's home directory
+$ mkdir .ssh
+
+5. Change the permission of the '.ssh'
+$ chmod 700 .ssh
+
+6. Make the empty file with name 'authorized_keys' into '.ssh' directory
+$ touch .ssh/authorized_keys
+
+7. Change the permission of the 'authorized_keys' file
+$ chmod 600 .ssh/authorized_keys
+
+8. Generate key with rsa type
+$ ssh-keygen -t rsa
+
+9. Copy the content of the '.ssh/id_rsa.pub' file
+
+10. Paste the content to the 'authorized_keys' file
+
+11. Copy the content of the '.ssh/id_rsa.pub' file
+
+12. Generate a new file with the extension 'pem' (no matter what name it is) and paste the content of 'id_rsa' file to that.
+->This is the new pem key file. Use it when connecting to the server.

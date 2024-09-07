@@ -1,0 +1,4 @@
+$ vi /etc/ssh/sshd-config
+PermitRootLogin no
+PermitRootLogin yes
+PermitRootLogin prohibit-password
