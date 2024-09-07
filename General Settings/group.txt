@@ -21,3 +21,7 @@ $ gpasswd -a <user> <group>
 2)Delete user from a group:
 $ gpasswd -d <user> <group>
 
+#groupmod
+1) Rename group name
+$ groupmod -n <new name> <old name>
+

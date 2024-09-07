@@ -1,0 +1,9 @@
+1. Install OpenSSH
+$ apt install openssh-server
+$ apt install openssh-client
+
+2. Check running
+systemctl status sshssh
+
+3. Configure OpenSSH
+$ vi /etc/ssh/sshd_config

@@ -1,0 +1,8 @@
+$ sudo vi /etc/ssh/sshd_config
+
+Port 22 -> Port <you want>
+
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart ssh
+
+$ sudo systemctl status ssh
