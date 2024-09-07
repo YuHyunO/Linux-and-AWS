@@ -13,7 +13,7 @@ $ mkdir .ssh
 5. Change the permission of the '.ssh'
 $ chmod 700 .ssh
 
-6. Make the empty file with name 'authorized_keys' into '.ssh' directory
+6. Make an empty file with name 'authorized_keys' into '.ssh' directory
 $ touch .ssh/authorized_keys
 
 7. Change the permission of the 'authorized_keys' file
