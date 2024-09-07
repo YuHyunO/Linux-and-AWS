@@ -23,5 +23,5 @@ $ gpasswd -d <user> <group>
 
 #groupmod
 1) Rename group name
-$ groupmod -n <new name> <old name>
+$ groupmod -n <new name> <old namecagpa>
 
