@@ -18,3 +18,7 @@ $ chown <options> <owner>:<group> <file or directory>
 $ chgrp <options> <group> file
 >option -R means --recursive
 
+
+*You can use the more functions about permission with 'acl'
+->apt install acl
+
