@@ -9,8 +9,8 @@ System clock synchronized: yes
           RTC in local TZ: no
 
 
-# timedatectl set-time "2021-08-10 19:41:00"
-# timedatectl set-time "19:41:00"
+# timedatectl set-time "2024-09-07 11:07:00"
+# timedatectl set-time "11:07:00"
 # timedatectl list-timezones
 # timedatectl set-timezone Asia/Seoul
 
